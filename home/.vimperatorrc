@@ -1,0 +1,31 @@
+"2.3.1 (created: 2010/04/07 18:25:13)
+
+" set defsearch=duckduckgo
+
+set editor='/usr/local/bin/mvim -f'
+" set visualbell
+set urlseparator=
+set gui=nonavigation
+
+" Provides search engine results from suggestengine:
+" set complete+='S' 
+" set runtimepath=/Users/jvm/.vimperator
+
+" My commands:
+command! sourcerc source /Users/jvm/.vimperatorrc
+command! editrc viewsource! /Users/jvm/.vimperatorrc
+command! humangui set gui=navigation
+command! nohumangui set gui=nonavigation
+
+" Messing with the passkey situation
+ignorekeys add -except=<C-p>,<C-n>,<C-d>,<C-u>,H,L,d,t 'duckduckgo.com'
+ignorekeys add -except=<C-p>,<C-n>,<C-d>,<C-u>,H,L,d,t 'google.com/voice'
+ignorekeys add -except=<C-p>,<C-n>,<C-d>,<C-u>,H,L,d,t 'google.com/calendar'
+ignorekeys add -except=<C-p>,<C-n>,<C-d>,<C-u>,H,L,d,t 'docs.google.com'
+ignorekeys add -except=<C-p>,<<C-n>,<C-d>,<C-u>,H,L,d,t 'google.com/reader'
+ignorekeys add -except=<C-p>,<C-n>,<C-d>,<C-u>,H,L,d,t 'google.com/search'
+ignorekeys add -except=<C-p>,<C-n>,<C-d>,<C-u>,H,L,d,t 'mail.google.com'
+ignorekeys add -except=<C-p>,<C-n>,<C-d>,<C-u>,H,L,d,t 'feedly.com'
+ignorekeys add -except=<C-p>,<C-n>,<C-d>,<C-u>,H,L,d,t '127.0.0.1'
+
+" vim: set ft=vimperator:
