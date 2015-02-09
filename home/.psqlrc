@@ -1,0 +1,27 @@
+
+-- Customize prompt
+\set PROMPT1 '%[%033[1;33m%]%M:%>%[%033[1;32m%] %n@%/%R%[%033[0m%]%# '
+\set PROMPT2 :PROMPT1
+\set PROMPT3 '>> '
+
+-- Let's not get swamped, limit all queries to 1000
+\set FETCH_COUNT 1000
+
+-- Actually print NULL for null
+\set null 'NULL'
+
+-- Get rid of duplicate sequences in the history
+\set HISTCONTROL ignoredups
+-- Set the command history file names for each host and database
+\set HISTFILE ~/Dropbox/Stitchfix/psql/psql_history-:HOST-:DBNAME
+-- Set the number of commands to store in the command history
+\set HISTSIZE 2000
+
+-- Encoding
+\encoding unicode
+
+-- Expanded output (when it makes sense)
+\x auto
+
+-- Track how long queries take
+\timing
