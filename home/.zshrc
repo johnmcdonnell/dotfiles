@@ -30,9 +30,6 @@ source $HOME/venv/bin/activate
 # Activate autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-# Read in env passwords
-source ~/.passwords
-
 #------------------------------
 # Prompt
 #------------------------------
