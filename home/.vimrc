@@ -185,11 +185,8 @@ let g:haddock_browser='open'
 
 " For slime
 let g:slime_target = "tmux"
+vmap <C-c><C-c> <Plug>SendSelectionToTmux
+nmap <C-c><C-c> <Plug>NormalModeSendToTmux
+nmap <C-c>r <Plug>SetTmuxVars
 
-" For syntastic
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-
-" For Vim-R-Pplugin (Breaks Pathogen)
-" set runtimepath=~/Vim-R-plugin,~/.vim,$VIMRUNTIME,~/.vim/after
 
