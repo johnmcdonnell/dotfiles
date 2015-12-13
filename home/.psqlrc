@@ -13,7 +13,7 @@
 -- Get rid of duplicate sequences in the history
 \set HISTCONTROL ignoredups
 -- Set the command history file names for each host and database
-\set HISTFILE ~/Dropbox/Stitchfix/psql/psql_history-:HOST-:DBNAME
+\set HISTFILE '~/Dropbox/Stitch Fix/psql/psql_history-:HOST-:DBNAME'
 -- Set the number of commands to store in the command history
 \set HISTSIZE 2000
 

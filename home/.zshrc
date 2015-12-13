@@ -5,8 +5,6 @@ setopt autopushd pushdsilent
 # zsh completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-
-
 # Make everything a little user friendlier with vim and less
 export PAGER=less
 #export LESS="-iMSx4 -FX"
@@ -15,12 +13,15 @@ export LESS="-erX"
 export EDITOR=vim
 
 # Help
+#unalias run-help
 autoload -U run-help
 autoload run-help-git
 autoload run-help-svn
 autoload run-help-svk
-unalias run-help
+autoload run-help
 alias help=run-help
+
+HELPDIR=/usr/local/share/zsh/help
 
 
 # Activate Development virtual environment
@@ -29,6 +30,9 @@ source $HOME/venv/bin/activate
 
 # Activate autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+# Hub
+eval "$(hub alias -s)"
 
 #------------------------------
 # Prompt
@@ -44,7 +48,6 @@ zstyle ':vcs_info:*' formats       \
 zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
 
 zstyle ':vcs_info:*' enable git cvs svn
-
 
 setprompt() {
   # load some modules
@@ -83,3 +86,5 @@ setprompt() {
   RPROMPT=$'$(vcs_info_wrapper)'
 }
 setprompt
+
+export SFEC2_IDENTITY=$HOME/.ssh/aa-infrastructure.pem

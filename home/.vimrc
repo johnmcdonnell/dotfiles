@@ -150,15 +150,10 @@ let g:miniBufExplModSelTarget = 1
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
-autocmd FileType python set omnifunc=pysmell#Complete
+
+" autocmd FileType python set omnifunc=pysmell#Complete
 
 let g:sneak#streak = 1
-
-" For FuzzyFinder (consider replacing w/ ctrlp)
-nmap ,f :FufFileWithCurrentBufferDir<CR>
-nmap ,b :FufBuffer<CR>
-nmap ,t :FufTaggedFile<CR>  " Not sure how to get tags for non-c++ things
-nmap ,c :FufChangeList<CR>
 
 " For notes
 let g:notes_directory = '~/Notes'
@@ -175,7 +170,11 @@ if $term =~ "xterm" || &term =~ "256" || $DISPLAY != ""
     set t_Co=256
 endif
 
+set background=dark
 colorscheme molokai
+
+" Syntastic
+let g:syntastic_enable_signs=0
 
 " For AirLine
 
@@ -189,4 +188,5 @@ vmap <C-c><C-c> <Plug>SendSelectionToTmux
 nmap <C-c><C-c> <Plug>NormalModeSendToTmux
 nmap <C-c>r <Plug>SetTmuxVars
 
-
+" For vim-r-plugin
+let vimrplugin_assign=2

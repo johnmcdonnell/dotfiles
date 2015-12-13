@@ -2,6 +2,7 @@
 local window      = require "mjolnir.window"
 local hotkey      = require "mjolnir.hotkey"
 local grid        = require "mjolnir.bg.grid"
+-- local hints = require "mjolnir.th.hints"
 
 -- Set up hotkey combinations
 local mash      = {"cmd", "ctrl"}
@@ -36,17 +37,20 @@ hotkey.bind(mash, "D", function()
   win:setframe(f)
 end)
 
-hotkey.bind(mash, 'H', gridset(0, 0, 1, 2)) -- left half
-hotkey.bind(mash, 'L', gridset(1, 0, 1, 2)) -- right half
-hotkey.bind(mash, 'K', gridset(0, 0, 2, 1)) -- top half
-hotkey.bind(mash, 'J', gridset(0, 1, 2, 1)) -- bottom half
+hotkey.bind(mash, 'left', gridset(0, 0, 1, 2)) -- left half
+hotkey.bind(mash, 'right', gridset(1, 0, 1, 2)) -- right half
+hotkey.bind(mash, 'up', gridset(0, 0, 2, 1)) -- top half
+hotkey.bind(mash, 'down', gridset(0, 1, 2, 1)) -- bottom half
 
-hotkey.bind(mashalt, 'J', gridset(0, 0, 1, 1)) -- upper left
-hotkey.bind(mashalt, 'L', gridset(1, 0, 1, 1)) -- upper right
-hotkey.bind(mashalt, 'K', gridset(1, 1, 1, 1)) -- lower right
-hotkey.bind(mashalt, 'H', gridset(0, 1, 1, 1)) -- lower left
+hotkey.bind(mashshift, 'up', gridset(0, 0, 1, 1)) -- upper left
+hotkey.bind(mashshift, 'right', gridset(1, 0, 1, 1)) -- upper right
+hotkey.bind(mashshift, 'down', gridset(1, 1, 1, 1)) -- lower right
+hotkey.bind(mashshift, 'left', gridset(0, 1, 1, 1)) -- lower left
 
 hotkey.bind(mash,      'U', grid.maximize_window)
 
-hotkey.bind(mashshift, 'left', grid.pushwindow_nextscreen)
-hotkey.bind(mashshift, 'right', grid.pushwindow_prevscreen)
+hotkey.bind(mashalt, 'left', grid.pushwindow_nextscreen)
+hotkey.bind(mashalt, 'right', grid.pushwindow_prevscreen)
+
+-- hotkey.bind(mash,"e",hints.windowHints)
+
