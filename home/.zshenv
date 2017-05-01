@@ -14,3 +14,4 @@ export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/local/include
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/lib
 
 export SHINY_MODE=LOCAL
+

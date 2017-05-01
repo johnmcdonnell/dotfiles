@@ -75,7 +75,7 @@ setprompt() {
     eval PR_HOST='${PR_GREEN}%M${PR_NO_COLOR}' # no SSH
   fi
   # set the prompt
-  PS1=$'(`basename \"$VIRTUAL_ENV\"`)${PR_CYAN}[${PR_USER}${PR_CYAN}@${PR_HOST}${PR_CYAN}][${PR_BLUE}%~${PR_CYAN}]${PR_USER_OP} '
+  PS1=$'(`basename \"$VIRTUAL_ENV\"`)${PR_CYAN}[${PR_USER}${PR_CYAN}@${PR_HOST}${PR_CYAN}][$FG[147]%~${PR_CYAN}]${PR_USER_OP} '
   PS2=$'%_>'
   vcs_info_wrapper() {
     vcs_info
@@ -87,4 +87,3 @@ setprompt() {
 }
 setprompt
 
-export SFEC2_IDENTITY=$HOME/.ssh/aa-infrastructure.pem

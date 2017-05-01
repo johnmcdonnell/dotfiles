@@ -60,3 +60,4 @@ hs.hotkey.bind(mashalt, 'right', hs.grid.pushWindowPrevScreen)
 
 -- hotkey.bind(mash,"e",hints.windowHints)
 
+hs.hotkey.bind(mashalt, 'R', hs.execute('echo $REDSHIFT_PASSWORD', true))

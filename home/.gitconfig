@@ -74,3 +74,13 @@
 	trustExitCode = true
 [mergetool "nbmerge"]
 	cmd = nbmerge $LOCAL $BASE $REMOTE $MERGED
+[credential]
+	helper = osxkeychain
+[difftool "nbdime"]
+	cmd = git-nbdifftool diff \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool "nbdime"]
+	cmd = git-nbmergetool merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[mergetool]
+	prompt = false

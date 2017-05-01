@@ -5,7 +5,7 @@
 set editor='/usr/local/bin/mvim -f'
 " set visualbell
 set urlseparator=
-set gui=nonavigation
+"set gui=nonavigation
 
 " Provides search engine results from suggestengine:
 " set complete+='S' 
