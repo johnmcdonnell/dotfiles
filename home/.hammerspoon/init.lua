@@ -1,7 +1,4 @@
 -- Load Extensions
--- local window      = require "mjolnir.window"
--- local hotkey      = require "mjolnir.hotkey"
--- local grid        = require "mjolnir.bg.grid"
 -- local hints = require "mjolnir.th.hints"
 
 -- Set up hotkey combinations
@@ -60,4 +57,3 @@ hs.hotkey.bind(mashalt, 'right', hs.grid.pushWindowPrevScreen)
 
 -- hotkey.bind(mash,"e",hints.windowHints)
 
-hs.hotkey.bind(mashalt, 'R', hs.execute('echo $REDSHIFT_PASSWORD', true))
