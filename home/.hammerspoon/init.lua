@@ -1,3 +1,6 @@
+-- REMINDER: Hammerspoon will throw `attempt to index a nil value` if you don't
+-- give it Accessibility permissions in System Preferences.
+
 -- Load Extensions
 -- local hints = require "mjolnir.th.hints"
 
