@@ -7,6 +7,7 @@ if [ -e "$HOME/.aliases" ]; then
 fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.gem/ruby/2.6.0/bin"
 export PATH=$PATH:$HOME/bin
 
 
