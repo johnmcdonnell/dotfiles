@@ -1,1 +1,3 @@
 .mjolnir
+.config/nvim
+.config/nvim/autoload
