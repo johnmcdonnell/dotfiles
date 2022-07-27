@@ -34,6 +34,12 @@ source $HOME/venv/bin/activate
 # Hub
 eval "$(hub alias -s)"
 
+alias gs='git status'
+
+
+# Spoofing database
+export POSTGRES_URI='sqlite:////tmp/test.db'
+
 #------------------------------
 # Prompt
 #------------------------------
@@ -86,4 +92,5 @@ setprompt() {
   RPROMPT=$'$(vcs_info_wrapper)'
 }
 setprompt
+
 

@@ -9,6 +9,7 @@ fi
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.gem/ruby/2.6.0/bin"
 export PATH=$PATH:$HOME/bin
+export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 
 
 export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/local/include
