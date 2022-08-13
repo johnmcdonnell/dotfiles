@@ -4,6 +4,7 @@
 [push]
 	config = default
 	default = current
+	autoSetupRemote = true
 [diff]
 	renames = true
 [diff "ipynb"]
@@ -62,9 +63,6 @@
 	cleanup-branches = !sh -c 'git branch --merged | grep -v ^* | xargs -n 1 git branch -d'
 [rerere]
 	enabled = 1
-[url "git@git.squareup.com"]
-	# makes clone ghe:user/repo a shortcut for clone git@git.squareup.com:user/repo
-	insteadOf = ghe
 [pull]
 	rebase = true
 [include]
