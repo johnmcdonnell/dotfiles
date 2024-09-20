@@ -26,7 +26,7 @@ HELPDIR=/usr/local/share/zsh/help
 
 # Activate Development virtual environment
 echo "Loading virtualenv $HOME/venv/bin/activate"
-source $HOME/venv/bin/activate
+# source $HOME/venv/bin/activate  # commented out by conda initialize
 
 # Activate autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
@@ -93,4 +93,29 @@ setprompt() {
 }
 setprompt
 
+
+
+
+# I suppressed conda using the following command:
+# conda config --set auto_activate_base false
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/jvm/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/jvm/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/jvm/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/jvm/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
