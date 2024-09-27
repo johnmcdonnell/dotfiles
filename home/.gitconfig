@@ -1,5 +1,5 @@
 [user]
-	name = John V. McDonnell
+	name = John McDonnell
 	email = john.v.mcdonnell@gmail.com
 [push]
 	config = default
@@ -25,6 +25,7 @@
 	interactive = auto
 [core]
 	excludesfile = ~/.gitignore
+	editor = nvim
 [init]
 	templatedir = ~/.git_template
 [alias]
