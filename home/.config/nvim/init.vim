@@ -7,8 +7,8 @@ call plug#begin('~/.config/nvim/plugged')
 "Define your plugins here
 Plug 'tpope/vim-surround'
 Plug 'arcticicestudio/nord-vim'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-pathogen'
 Plug 'tpope/vim-fugitive'
 Plug 'github/copilot.vim'
@@ -42,8 +42,8 @@ colorscheme melange
 " Statusline
 lua require('feline').setup()
 
-" if !exists('g:airline_symbols')
-    " let g:airline_symbols = {}
-" endif
-" let g:airline_symbols.colnr = "\u33c7"
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.colnr = "\u33c7"
 

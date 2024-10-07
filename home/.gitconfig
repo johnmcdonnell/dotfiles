@@ -1,6 +1,6 @@
 [user]
-	name = John McDonnell
-	email = john.v.mcdonnell@gmail.com
+	name = John V. McDonnell
+	email = john@rubberduckylabs.io
 [push]
 	config = default
 	default = current

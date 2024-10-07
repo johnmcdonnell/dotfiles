@@ -17,6 +17,4 @@ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/lib
 
 export SHINY_MODE=LOCAL
 
-# As instructed by pyenv https://github.com/pyenv/pyenv#installation
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
-
+eval "$(/opt/homebrew/bin/brew shellenv)"

@@ -94,28 +94,8 @@ setprompt() {
 setprompt
 
 
+# Update PATH for the Google Cloud SDK.
+if [ -f '/Users/johnmcdonnell/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/johnmcdonnell/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
-
-# I suppressed conda using the following command:
-# conda config --set auto_activate_base false
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/jvm/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/jvm/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/jvm/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/jvm/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
+# Enable shell command completion for gcloud.
+if [ -f '/Users/johnmcdonnell/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/johnmcdonnell/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
