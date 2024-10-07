@@ -19,13 +19,7 @@ Plug 'savq/melange'
 Plug 'feline-nvim/feline.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mfussenegger/nvim-lint'
-
-
-
 call plug#end()
-
-" Launching pathogen
-execute pathogen#infect()
 
 " Persistent undo
 set undofile
