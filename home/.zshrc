@@ -99,3 +99,9 @@ if [ -f '/Users/johnmcdonnell/Downloads/google-cloud-sdk/path.zsh.inc' ]; then .
 
 # Enable shell command completion for gcloud.
 if [ -f '/Users/johnmcdonnell/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/johnmcdonnell/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+# Added by dbt Fusion extension (ensure dbt binary dir on PATH)
+if [[ ":$PATH:" != *":/Users/JohnMcDonnell/.local/bin:"* ]]; then
+  export PATH=/Users/JohnMcDonnell/.local/bin:"$PATH"
+fi
+# Added by dbt Fusion extension
+alias dbtf=/Users/JohnMcDonnell/.local/bin/dbt
