@@ -1,0 +1,17 @@
+{
+  "model": "opus",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/JohnMcDonnell/.claude/hooks/block-dangerous-git.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "effortLevel": "high"
+}
