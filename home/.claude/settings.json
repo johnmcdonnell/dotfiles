@@ -11,6 +11,17 @@
           }
         ]
       }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/JohnMcDonnell/.claude/hooks/notify-iterm.sh"
+          }
+        ]
+      }
     ]
   },
   "effortLevel": "high"
