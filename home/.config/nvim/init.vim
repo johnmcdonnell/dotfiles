@@ -14,7 +14,7 @@ Plug 'mcchrish/zenbones.nvim'
 Plug 'EdenEast/nightfox.nvim'
 Plug 'savq/melange'
 Plug 'feline-nvim/feline.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-web-devicons' " Requires a Nerd Font in your terminal (brew install --cask font-hack-nerd-font)
 call plug#end()
 
 " Persistent undo
