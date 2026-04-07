@@ -1,5 +1,8 @@
 {
   "model": "opus",
+  "permissions": {
+    "defaultMode": "auto"
+  },
   "hooks": {
     "PreToolUse": [
       {
@@ -13,5 +16,17 @@
       }
     ]
   },
-  "effortLevel": "high"
+  "extraKnownMarketplaces": {
+    "marimo-pair": {
+      "source": {
+        "source": "github",
+        "repo": "marimo-team/marimo-pair"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "skipAutoPermissionPrompt": true,
+  "enabledPlugins": {
+    "marimo-pair@marimo-pair": true
+  }
 }
