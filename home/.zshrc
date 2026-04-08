@@ -99,3 +99,6 @@ if [ -f '/Users/johnmcdonnell/Downloads/google-cloud-sdk/path.zsh.inc' ]; then .
 
 # Enable shell command completion for gcloud.
 if [ -f '/Users/johnmcdonnell/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/johnmcdonnell/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Source machine-specific work config (gitignored)
+[[ -f ~/.zshrc.found ]] && source ~/.zshrc.found

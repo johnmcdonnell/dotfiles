@@ -1,0 +1,32 @@
+{
+  "model": "opus",
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/JohnMcDonnell/.claude/hooks/block-dangerous-git.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "extraKnownMarketplaces": {
+    "marimo-pair": {
+      "source": {
+        "source": "github",
+        "repo": "marimo-team/marimo-pair"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "skipAutoPermissionPrompt": true,
+  "enabledPlugins": {
+    "marimo-pair@marimo-pair": true
+  }
+}
