@@ -18,3 +18,6 @@ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/lib
 export SHINY_MODE=LOCAL
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
+alias cddbt='cd ~/Development/found/data-platform/dbt'
