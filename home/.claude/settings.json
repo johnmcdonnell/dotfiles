@@ -24,7 +24,7 @@
       }
     }
   },
-  "effortLevel": "high",
+  "effortLevel": "xhigh",
   "skipAutoPermissionPrompt": true,
   "enabledPlugins": {
     "marimo-pair@marimo-pair": true
