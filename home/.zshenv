@@ -21,3 +21,4 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
 alias cddbt='cd ~/Development/found/data-platform/dbt'
+alias claudedbt='cddbt && claude --worktree'
