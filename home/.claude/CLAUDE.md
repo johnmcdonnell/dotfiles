@@ -1,5 +1,7 @@
 # Personal Claude Preferences
 
+Prefer using bq over hex.
+
 When doing complex agent work, please create and keep updated a file called
 CLAUDE_PLAN.md so that future Claudes can understand what you are up to.
 
