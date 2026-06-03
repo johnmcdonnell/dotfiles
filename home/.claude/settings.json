@@ -1,5 +1,4 @@
 {
-  "model": "opus",
   "permissions": {
     "defaultMode": "auto"
   },
@@ -16,17 +15,24 @@
       }
     ]
   },
+  "enabledPlugins": {
+    "marimo-pair@marimo-pair": true,
+    "bigquery@found-plugins": true
+  },
   "extraKnownMarketplaces": {
     "marimo-pair": {
       "source": {
         "source": "github",
         "repo": "marimo-team/marimo-pair"
       }
+    },
+    "found-plugins": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/JohnMcDonnell/.claude/plugins/marketplaces/found-plugins"
+      }
     }
   },
   "effortLevel": "xhigh",
-  "skipAutoPermissionPrompt": true,
-  "enabledPlugins": {
-    "marimo-pair@marimo-pair": true
-  }
+  "skipAutoPermissionPrompt": true
 }
