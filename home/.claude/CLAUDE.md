@@ -18,3 +18,7 @@ CLAUDE_PLAN.md so that future Claudes can understand what you are up to.
   it's generally best to work within a worktree.
 - If you have an open PR, when you make a substantive change update the PR
   description so the description matches the code being PR'd.
+
+## Found specific notes
+
+- dbt repo is deprecated so don't try to use it. dbt is now in the `found` monorepo under data-platform/dbt.
