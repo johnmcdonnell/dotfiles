@@ -5,7 +5,8 @@ Prefer using bq over hex.
 When doing complex agent work, please create and keep updated a file called
 CLAUDE_PLAN.md so that future Claudes can understand what you are up to.
 
-## Git Practices
+
+# Git Practices
 
 - Create PRs as Draft unless asked specifically not to.
 - Commit relatively frequently when you do a chunk of work.
@@ -24,3 +25,8 @@ CLAUDE_PLAN.md so that future Claudes can understand what you are up to.
 ## Found specific notes
 
 - dbt repo is deprecated so don't try to use it. dbt is now in the `found` monorepo under data-platform/dbt.
+- ~/Development/found is the company monorepo. It contains dbt in its data-platform subdirectory.
+- ~/Development/personal-folders is a good repo for miscellany, especially in the `john` subdirectory. This is also where we archive the slides for `bod` decks
+- ~/Development/data-workflows contains datahub and airflow
+- ~/Development/cc-plugins-testing contains the Claude skills
+- ~/Development/analytics contains the code to fit our ML models
